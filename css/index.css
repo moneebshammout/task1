@@ -1,0 +1,98 @@
+:root{
+    --pink: #ef7998;
+    --mainYellow: rgb(249, 228, 148);
+    --mainWhite: #fff;
+    --mainBlack: #000;
+    --yellowTrans: rgba(249, 228, 148, 0.5);
+    --grey: #8d8fa7;
+    
+}html{
+    font-family: 'Kaushan Script';
+}
+
+body{
+    margin: 0;
+    display: block;
+    font-size: 100%;
+    
+    }   
+.large-pink-font{
+font-size: 4rem;
+color: var(--pink);
+}
+.strech-max-width{
+    left: 0;
+    right:0;
+    min-width: 100%;
+    top: 0;
+}
+
+.center-parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+.center-child{
+    display: table;
+    margin-bottom: 20%;
+  }
+.top-nav{
+    overflow: hidden;  
+    height: 4.5rem;
+    background-color: var(--mainWhite);
+}
+.logo-link{
+    padding-left: 1rem;
+    font-size: 4rem;
+}
+.max-hight-container{
+    height: 70rem;
+}
+.welcome-container{     
+    background: linear-gradient(var(--yellowTrans), var(--yellowTrans)),url('/images/welcomeImage.jpeg') center/cover fixed  no-repeat;
+    position: relative;
+    min-height: 50rem;
+    min-width: 5%;
+}
+.title-content{
+    color: black;
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+.force-white{
+    color: white !important;
+}
+a{
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+}
+
+.button-theme{
+ background-color: transparent;
+ color: black;
+ border: black solid 0.2rem;
+ text-align: center;
+ line-height: 3.5rem;
+ width: 8.5rem;
+ font-size: 1.5rem;
+ border-radius: 0.3rem;
+ font-family: 'Kaushan Script';
+ 
+}
+.button-theme:focus{
+    background-color: black;
+    color: pink;
+}
+.aboutus-container{
+    background-color: white;
+    height: 50rem;
+
+}
+.aboutus-content{
+    color: var(--grey);
+    word-break: break-word;
+    font-size: calc(0.4rem + 0.8vw);
+}

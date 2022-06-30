@@ -1,0 +1,45 @@
+:root {
+    --pink: #ef7998;
+  }
+.nav-toggler
+{
+     display: inline;
+     background-color:transparent;
+     border: none;
+}
+#nav-icon{
+    color: var(--pink);
+    position: absolute;
+    top: 1rem;
+    right: 1.7rem;
+    font-size: 2.5rem;
+   
+}
+.drop-down-container
+{
+    display: none;
+    transition: 1s;
+    
+}
+/* remove blue highlighting when clicking */
+
+@keyframes colorTransitionNavLinks{
+    from {color: var(--pink);}
+    to {color: black;}
+  }
+.nav-button{
+    color: var(--pink);
+    display: block;
+    outline: none;
+    background-color: white;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    outline: none;
+    border: none;
+}
+.nav-button:focus{
+    animation-name: colorTransitionNavLinks;
+    animation-duration: 2s;
+    color: black;
+}
