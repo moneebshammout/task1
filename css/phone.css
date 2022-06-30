@@ -21,8 +21,6 @@
     transition: 1s;
     
 }
-/* remove blue highlighting when clicking */
-
 @keyframes colorTransitionNavLinks{
     from {color: var(--pink);}
     to {color: black;}
@@ -42,4 +40,14 @@
     animation-name: colorTransitionNavLinks;
     animation-duration: 2s;
     color: black;
+}
+.aboutus-preview{
+    width: 80%;
+    height: 70%;
+    margin-top: 20%;
+}
+.aboutus-sweet{
+    max-width: 100%;
+    height: auto;
+
 }

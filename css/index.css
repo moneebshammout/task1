@@ -4,7 +4,7 @@
     --mainWhite: #fff;
     --mainBlack: #000;
     --yellowTrans: rgba(249, 228, 148, 0.5);
-    --grey: #8d8fa7;
+    --grey: #6c757d;
     
 }html{
     font-family: 'Kaushan Script';
@@ -15,7 +15,7 @@ body{
     display: block;
     font-size: 100%;
     
-    }   
+}   
 .large-pink-font{
 font-size: 4rem;
 color: var(--pink);
@@ -65,6 +65,7 @@ color: var(--pink);
 .force-white{
     color: white !important;
 }
+/* remove blue highlighting when clicking */
 a{
     -webkit-tap-highlight-color: transparent;
     text-decoration: none;
@@ -73,14 +74,19 @@ a{
 .button-theme{
  background-color: transparent;
  color: black;
- border: black solid 0.2rem;
+ border: black solid 0.1rem;
  text-align: center;
- line-height: 3.5rem;
- width: 8.5rem;
- font-size: 1.5rem;
+ font-size: 1rem;
+ padding: 2% 4% 2% 4%;
  border-radius: 0.3rem;
  font-family: 'Kaushan Script';
- 
+}
+.force-big-button{
+    padding: 0% !important;
+    border: black solid 0.2rem !important;
+    width: 8.5rem !important;
+    font-size: 1.5rem !important;
+    line-height: 3.5rem !important;
 }
 .button-theme:focus{
     background-color: black;
@@ -89,10 +95,14 @@ a{
 .aboutus-container{
     background-color: white;
     height: 50rem;
-
+    margin-top: 20%;
+}
+.space-left{
+    margin-left: 10%;
+    margin-right: 30%;
 }
 .aboutus-content{
     color: var(--grey);
-    word-break: break-word;
-    font-size: calc(0.4rem + 0.8vw);
+    font-size: calc(0.7rem + 0.8vw);
+    font-weight: 550;
 }
