@@ -1,108 +1,150 @@
-:root{
+:root {
     --pink: #ef7998;
     --mainYellow: rgb(249, 228, 148);
     --mainWhite: #fff;
     --mainBlack: #000;
     --yellowTrans: rgba(249, 228, 148, 0.5);
     --grey: #6c757d;
-    
-}html{
-    font-family: 'Kaushan Script';
+
 }
 
-body{
+html,
+body {
+    font-family: 'Kaushan Script';
+    /* min-height: 100%; */
     margin: 0;
-    display: block;
+
     font-size: 100%;
-    
-}   
-.large-pink-font{
-font-size: 4rem;
-color: var(--pink);
+    min-height: 100vh;
 }
-.strech-max-width{
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.large-pink-font {
+    font-size: 4rem;
+    color: var(--pink);
+}
+
+.strech-max-width {
     left: 0;
-    right:0;
+    right: 0;
     min-width: 100%;
     top: 0;
 }
 
-.center-parent{
+.center-parent {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-  }
-.center-child{
-    display: table;
+}
+
+.center-child {
+    display: table-cell;
     margin-bottom: 20%;
-  }
-.top-nav{
-    overflow: hidden;  
+}
+
+.top-nav {
+    overflow: hidden;
     height: 4.5rem;
     background-color: var(--mainWhite);
 }
-.logo-link{
+
+.logo-link {
     padding-left: 1rem;
     font-size: 4rem;
 }
-.max-hight-container{
+
+.max-hight-container {
     height: 70rem;
 }
-.welcome-container{     
-    background: linear-gradient(var(--yellowTrans), var(--yellowTrans)),url('/images/welcomeImage.jpeg') center/cover fixed  no-repeat;
+
+.welcome-container {
+    background: linear-gradient(var(--yellowTrans), var(--yellowTrans)), url('/images/welcomeImage.jpeg') center/cover fixed no-repeat;
     position: relative;
     min-height: 50rem;
     min-width: 5%;
 }
-.title-content{
+
+.title-content {
     color: black;
     margin-bottom: 0.5rem;
     font-size: 2.5rem;
     font-weight: 100;
 }
-.force-white{
+
+.force-white {
     color: white !important;
 }
+
 /* remove blue highlighting when clicking */
-a{
+a {
     -webkit-tap-highlight-color: transparent;
     text-decoration: none;
 }
 
-.button-theme{
- background-color: transparent;
- color: black;
- border: black solid 0.1rem;
- text-align: center;
- font-size: 1rem;
- padding: 2% 4% 2% 4%;
- border-radius: 0.3rem;
- font-family: 'Kaushan Script';
+.button-theme {
+    background-color: transparent;
+    color: black;
+    border: black solid 0.1rem;
+    text-align: center;
+    font-size: 1rem;
+    padding: 2% 4% 2% 4%;
+    border-radius: 0.3rem;
+    font-family: 'Kaushan Script';
 }
-.force-big-button{
+
+.force-big-button {
     padding: 0% !important;
     border: black solid 0.2rem !important;
     width: 8.5rem !important;
     font-size: 1.5rem !important;
     line-height: 3.5rem !important;
 }
-.button-theme:focus{
+
+.button-theme:focus {
     background-color: black;
     color: pink;
 }
-.aboutus-container{
+
+.aboutus-container {
     background-color: white;
     height: 50rem;
     margin-top: 20%;
 }
-.space-left{
-    margin-left: 10%;
+
+.space-left {
+    margin-left: 15%;
     margin-right: 30%;
 }
-.aboutus-content{
+
+.aboutus-content {
     color: var(--grey);
     font-size: calc(0.7rem + 0.8vw);
     font-weight: 550;
+    position: relative;
+}
+
+
+.aboutus-border {
+    border: solid 0.5rem;
+    border-color: var(--mainYellow);
+    position: absolute;
+    height: 37.5rem;
+    width: 50rem;
+    max-width: 70%;
+    max-height: 40%;
+
+
+}
+
+.aboutus-sweet {
+    max-width: 100%;
+    max-height: 100%;
+
 }

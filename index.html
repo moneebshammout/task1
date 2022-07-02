@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,49 +13,53 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <!-- local styles -->
-    <link rel="stylesheet"  href="css/index.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" media="screen and (min-width: 0rem) and (max-width:56rem)" href="css/phone.css">
-    <link rel="stylesheet" media="screen and (min-width: 56.25rem)"  href="css/desktop.css">
+    <link rel="stylesheet" media="screen and (min-width: 56.25rem)" href="css/desktop.css">
     <!-- local javascript     -->
     <script src="javascript/index.js"></script>
 </head>
+
 <body>
     <header>
         <div class="top-nav strech-max-width">
             <a href="#" class="logo-link"><img src="/images/logo.svg" alt="logo"></a>
-        <div class="drop-down-container">
-            <a href="#" class="nav-button">Home</a>
-            <a href="#" class="nav-button">About</a>
-            <a href="#" class="nav-button">Store</a>
+            <div class="drop-down-container">
+                <a href="#" class="nav-button">Home</a>
+                <a href="#" class="nav-button">About</a>
+                <a href="#" class="nav-button">Store</a>
+            </div>
+            <button class="nav-toggler" onclick="toggleDropDown()"><i class="fas fa-bars" id="nav-icon"></i></button>
         </div>
-        <button class="nav-toggler" onclick="toggleDropDown()"><i class="fas fa-bars" id="nav-icon"></i></button>
-      </div>
-      <div class="strech-max-width">
-        <div class="welcome-container center-parent ">
-            <h1 class="title-content force-white center-child">Welcome To <strong class="large-pink-font">Grandma's</strong></h1>
-            <a href="#explore" class="button-theme force-big-button center-child" >EXPLORE</a>
+
+        <div class="welcome-container center-parent strech-max-width ">
+            <h1 class="title-content force-white center-child">Welcome To <strong
+                    class="large-pink-font">Grandma's</strong></h1>
+            <a href="#explore" class="button-theme force-big-button center-child">EXPLORE</a>
 
         </div>
-      </div>    
     </header>
-    <section  id="aboutus"class="max-hight-container strech-max-width aboutus-container">
-        
-          <h1 class="title-content space-left">About <strong class="large-pink-font">Us</strong></h1>
-          <div class="aboutus-content space-left">
-           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aliquam voluptas
-            beatae vitae expedita consectetur nesciunt quia deserunt asperiores facere fuga dicta fugiat corrupti et omnis
-            porro at dolorum! Ad! </p>
+    <section id="aboutus" class="max-hight-container strech-max-width aboutus-container">
+
+        <h1 class="title-content space-left">About <strong class="large-pink-font">Us</strong></h1>
+        <div class="aboutus-content space-left">
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aliquam voluptas
+                beatae vitae expedita consectetur nesciunt quia deserunt asperiores facere fuga dicta fugiat corrupti et
+                omnis
+                porro at dolorum! Ad! </p>
             <br>
             <a href="#explore" class="button-theme">EXPLORE</a>
         </div>
-        <div class="aboutus-preview">
-          <!-- https://freefrontend.com/css-border-animations/ -->
-          <img src="/images/sweets-1.jpeg" class="aboutus-sweet" alt="cake">
+        <div class="aboutus-preview ">
+            <!-- https://freefrontend.com/css-border-animations/ -->
+            <div class="aboutus-border"></div>
+            <img src="/images/sweets-1.jpeg" class="aboutus-sweet space-left" alt="cake">
 
         </div>
-       
+
 
     </section>
 
 </body>
+
 </html>
