@@ -5,6 +5,7 @@
     --mainBlack: #000;
     --yellowTrans: rgba(249, 228, 148, 0.5);
     --grey: #6c757d;
+    --lowGrew:#eeeeee;
 
 }
 
@@ -42,6 +43,7 @@ body {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    
 }
 
 .center-child {
@@ -94,7 +96,7 @@ a {
     border: black solid 0.1rem;
     text-align: center;
     font-size: 1rem;
-    padding: 2% 4% 2% 4%;
+    padding: 1% 4% 1% 4%;
     border-radius: 0.3rem;
     font-family: 'Kaushan Script';
 }
@@ -132,14 +134,18 @@ a {
 
 
 .aboutus-border {
-    border: solid 0.5rem;
+    border: solid 0.6rem;
     border-color: var(--mainYellow);
     width: 100%;
     height: auto;
-    max-width: 70%;
-    max-height: 38%;
+    max-width: 73%;
+    max-height: 40%;
     position: absolute;
+    margin-top: -2rem;
+    margin-left: 4rem;
+    transition: 1s;
 }
+
 
 .aboutus-sweet {
     width: 100%;
@@ -148,4 +154,37 @@ a {
     max-height: 38%;
     position: absolute;
     vertical-align: middle;
+}
+#store{
+    background-color: var(--lowGrew);
+}
+.our-store-links{
+    display: inline-block !important;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+.search-bar{
+    margin-left: 20%;
+
+}
+.search-box{
+    width: 20rem;
+    height: 2.5rem;
+    border: transparent ;
+    border-radius: 0.2rem;
+}
+#search-icon{
+    color: black;
+    background-color: transparent;
+    font-size: 2rem;
+    border: none;
+}
+/* #search-btn{
+    
+} */
+#search-icon-wrapper{
+    background-color: var(--pink);
+    width: 20rem;
+    height: 2.5rem;
+    display: inline;
 }

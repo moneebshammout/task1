@@ -20,7 +20,7 @@
     <script src="javascript/index.js"></script>
 </head>
 
-<body>
+<body onclick="defaultAboutBorder()">
     <header>
         <div class="top-nav strech-max-width">
             <a href="#" class="logo-link"><img src="/images/logo.svg" alt="logo"></a>
@@ -53,11 +53,28 @@
         <div class="aboutus-preview ">
             <!-- https://freefrontend.com/css-border-animations/ -->
             <div class="aboutus-border"></div>
-            <img src="/images/sweets-1.jpeg" class="aboutus-sweet space-left" alt="cake">
+            <img src="/images/sweets-1.jpeg" onload="aboutusSweetAssignEvent()" class="aboutus-sweet space-left" alt="cake">  
 
         </div>
 
 
+    </section>
+    <section id="store" class="max-hight-container">
+        <div class="center-parent">
+            <h1 class="title-content ">Our <strong class="large-pink-font">Store</strong></h1>
+        </div>
+       
+        <a href="" class="button-theme  our-store-links">ALL</a>
+        <a href="" class="button-theme  our-store-links">CAKES</a>
+        <a href="" class="button-theme  our-store-links">CUPCAKES</a>
+        <a href="" class="button-theme  our-store-links">SWEETS</a>
+        <a href="" class="button-theme  our-store-links">DOUGHNUTS</a>
+        <form onsubmit="return searchItems()" class="search-bar">
+            <div id="search-icon-wrapper" >
+                <button type="submit" id="search-btn"><i class="fa fa-search" id="search-icon"></i></button>
+            </div>
+            <input type="text" placeholder="items" name="search" class="search-box">
+        </form>
     </section>
 
 </body>
