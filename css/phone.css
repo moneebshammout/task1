@@ -1,6 +1,9 @@
 :root {
     --pink: #ef7998;
 }
+.max-hight-container {
+    height: 70rem;
+}
 
 .nav-toggler {
     display: inline;
@@ -20,45 +23,66 @@
 .drop-down-container {
     display: none;
     transition: 1s;
-
 }
-
-@keyframes colorTransitionNavLinks {
-    from {
-        color: var(--pink);
-    }
-
-    to {
-        color: black;
-    }
+.welcome-container {
+    background: linear-gradient(var(--yellowTrans), var(--yellowTrans)), url('/images/welcomeImage.jpeg') center/cover fixed no-repeat;
+    position: relative;
+    min-height: 50rem;
+    min-width: 5%;
 }
-
-.nav-button {
-    color: var(--pink);
-    display: block;
-    outline: none;
+.aboutus-container {
     background-color: white;
-    font-size: 1.5rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    outline: none;
-    border: none;
+    height: 50rem;
+    margin-top: 20%;
 }
-
-.nav-button:focus {
-    animation-name: colorTransitionNavLinks;
-    animation-duration: 2s;
-    color: black;
+.aboutus-content {
+    color: var(--grey);
+    font-size: calc(0.7rem + 0.8vw);
+    font-weight: 550;
+    position: relative;
 }
-
 .aboutus-preview {
     /* width: 70%; */
     margin-top: 20%;
-    height: 37.5rem;
-    width: 30rem;
+    height: 27.5rem;
+    width: 10rem;
 }
 
 .aboutus-border {
     height: 37.5rem;
     width: 30rem;
+    display: inline-block;
+    max-width: 73%;
+    max-height: 40%;
+    margin-top: -2rem;
+    margin-left: 4rem;
+    vertical-align: middle;
+}
+.aboutus-sweet {
+    width: 100%;
+    height: auto;
+    max-width: 70%;
+    max-height: 38%;
+    position: absolute;
+    vertical-align: middle;
+}
+.phone-icon,#cart-btn{
+    display: none;
+}
+.store-item-container{
+    display: grid;
+    margin-top: 5rem;
+    margin-left: 4rem;
+    grid-template-columns: 14rem 14rem;
+    column-gap: 3rem;
+    box-sizing: border-box;
+}
+.store-item{
+    width: 14rem;
+    height: 16rem;
+
+    background-color: white;
+    display: inline-grid;
+    margin-bottom: 5rem;
+    flex-direction: row;
 }

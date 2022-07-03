@@ -20,22 +20,27 @@
     <script src="javascript/index.js"></script>
 </head>
 
-<body onclick="defaultAboutBorder()">
+<body onclick="defaultAboutBorder()" onload="displayItems(null)" >
     <header>
         <div class="top-nav strech-max-width">
             <a href="#" class="logo-link"><img src="/images/logo.svg" alt="logo"></a>
             <div class="drop-down-container">
                 <a href="#" class="nav-button">Home</a>
-                <a href="#" class="nav-button">About</a>
-                <a href="#" class="nav-button">Store</a>
+                <a href="#aboutus" class="nav-button">About</a>
+                <a href="#store" class="nav-button">Store</a>
             </div>
             <button class="nav-toggler" onclick="toggleDropDown()"><i class="fas fa-bars" id="nav-icon"></i></button>
+            <i class="fas fa-phone phone-icon"> <span id="phone-number">
+                + 123 456 789
+            </span>
+                </i>
+                <button id="cart-btn">0 items $0</button>
         </div>
 
         <div class="welcome-container center-parent strech-max-width ">
             <h1 class="title-content force-white center-child">Welcome To <strong
                     class="large-pink-font">Grandma's</strong></h1>
-            <a href="#explore" class="button-theme force-big-button center-child">EXPLORE</a>
+            <a href="#store" class="button-theme force-big-button center-child">EXPLORE</a>
 
         </div>
     </header>
@@ -48,33 +53,37 @@
                 omnis
                 porro at dolorum! Ad! </p>
             <br>
-            <a href="#explore" class="button-theme">EXPLORE</a>
+            <a href="#store" class="button-theme">EXPLORE</a>
         </div>
         <div class="aboutus-preview ">
-            <!-- https://freefrontend.com/css-border-animations/ -->
-            <div class="aboutus-border"></div>
-            <img src="/images/sweets-1.jpeg" onload="aboutusSweetAssignEvent()" class="aboutus-sweet space-left" alt="cake">  
-
+            <div class="aboutus-border">
+                <img src="/images/item1.jpeg" alt="dummyImage" class="dummy-border-image">
+            </div>
+            <img src="/images/item1.jpeg" onload="aboutusSweetAssignEvent()" class="aboutus-sweet space-left" alt="cake">  
         </div>
-
-
     </section>
-    <section id="store" class="max-hight-container">
+    <section id="store">
         <div class="center-parent">
             <h1 class="title-content ">Our <strong class="large-pink-font">Store</strong></h1>
         </div>
-       
-        <a href="" class="button-theme  our-store-links">ALL</a>
-        <a href="" class="button-theme  our-store-links">CAKES</a>
-        <a href="" class="button-theme  our-store-links">CUPCAKES</a>
-        <a href="" class="button-theme  our-store-links">SWEETS</a>
-        <a href="" class="button-theme  our-store-links">DOUGHNUTS</a>
-        <form onsubmit="return searchItems()" class="search-bar">
-            <div id="search-icon-wrapper" >
+        <div class="our-store-link-container">
+            <button  class="button-theme  our-store-links" onclick="searchCategory('ALL')">ALL</button>
+        <button class="button-theme  our-store-links" onclick="searchCategory('CAKES')">CAKES</button>
+        <button class="button-theme  our-store-links" onclick="searchCategory('CUPCAKES')">CUPCAKES</button>
+        <button class="button-theme  our-store-links" onclick="searchCategory('SWEETS')">SWEETS</button>
+        <button class="button-theme  our-store-links" onclick="searchCategory('DOUGHNUTS')">DOUGHNUTS</button>
+
+        </div>
+        
+        <div class="search-bar">
+            <div id="search-icon-wrapper" class="center-parent" >
                 <button type="submit" id="search-btn"><i class="fa fa-search" id="search-icon"></i></button>
             </div>
-            <input type="text" placeholder="items" name="search" class="search-box">
-        </form>
+            <input type="text" placeholder="items..." name="search" class="search-box" onkeyup="searchItems()">
+        </div>
+        <div class="store-item-container ">
+            <!-- items will be inserted from displayItems() -->
+        </div>
     </section>
 
 </body>
