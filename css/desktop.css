@@ -78,7 +78,7 @@
 }
 .aboutus-preview {
     /* width: 70%; */
-    margin-top: 20%;
+    margin-top: 15%;
     height: 37.5rem;
     width: 30rem;
 }
@@ -90,7 +90,7 @@
     position: absolute;
     vertical-align: middle;
     display: inline;
-    top: 140%;
+    top: 130%;
     left: 40%;
 }
 .aboutus-border {
@@ -102,7 +102,7 @@
     margin-left: 4rem;
     vertical-align: middle;
     display: inline;
-    top: 140%;
+    top: 130%;
     left: 50%;
 }
 #store{
@@ -176,10 +176,124 @@
     .cart-container{
         width: 3rem;
         height: 3rem;
-        margin-top: 12%;
-        margin-left: 12.7%;
+        margin-top: 12.5%;
+        margin-left: 13.2%;
     }
     .item-cart-icon{
-        margin-top: 12%;
-        margin-left: 12.7%;
+        margin-top: 12.5%;
+        margin-left: 13.2%;
+    }
+    #cart-menue{
+        position: absolute;
+        display: none;
+        background: linear-gradient(#f9f4e0, #f9f4e0);
+        height: 50rem;
+        width: 20rem;
+        top: 7.5%;
+        right: 0%;
+        z-index: 1;
+    
+
+    }
+    .cart-item{
+        width: 20rem;
+        height: 3rem;
+        margin-top: 10%;
+        
+    }
+    .cart-item-image{
+        width: 20%;
+        height: auto;
+        vertical-align: middle;
+        border-radius: 50%;
+        display: inline;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    .cart-item-info{
+        color: var(--pink);
+        transition: 1s;
+    }
+    .trash-icon:hover{
+        color: black;
+        transform: scale(1.1);
+    }
+    .total-div{
+        font-size: 2rem;
+        color: black;
+        margin-left: 3rem;
+        margin-top: 2rem;
+    }
+    .utilities-div{
+        margin-top: 2rem;
+        margin-left: 3rem;
+    }
+    .clear-cart-btn,.checkout-btn{
+        font-size: 1.3rem;
+        margin-right: 1rem;
+
+    }
+
+    /* small desktop devices */
+
+    @media only screen and (min-width:56.25rem) and (max-width:96.875rem) {
+        #cart-btn{
+            margin-left: 80%;
+        }
+        .phone-icon{
+            margin-left: 70%;
+        }
+        .aboutus-sweet {
+            
+            position: absolute;
+            vertical-align: middle;
+            display: inline;
+            top: 160%;
+            left: 41%;
+        }
+        .aboutus-border {
+            
+            top: 160%;
+            left: 50%;
+        }
+        
+        .search-bar{
+            margin-left: 32%;
+        
+        }
+        .search-box{
+            left: 50%;
+        }
+        #search-icon-wrapper{
+            left: 29.7%;
+          
+        }
+        .store-item-container{
+            display: grid;
+            margin-top: 5rem;
+            margin-left: 13rem;
+            column-gap: 10rem;
+        }
+        
+            .store-item{
+                width: 20rem;
+                height: 20rem;
+            
+                background-color: white;
+                display: inline-grid;
+                margin-bottom: 5rem;
+                flex-direction: row;
+            }
+        
+            .cart-container{
+                width: 3rem;
+                height: 3rem;
+                margin-top: 15.3%;
+                margin-left: 18%;
+            }
+            .item-cart-icon{
+                margin-top: 15.3%;
+                margin-left: 18%;
+            }
+
     }
