@@ -233,10 +233,12 @@
         margin-right: 1rem;
 
     }
-
+    .item-description{
+        font-size: 1.3rem;
+    }
     /* small desktop devices */
 
-    @media only screen and (min-width:56.25rem) and (max-width:96.875rem) {
+    @media only screen and (min-width:56.25rem) and (max-width:96rem) {
         #cart-btn{
             margin-left: 80%;
         }

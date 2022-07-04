@@ -177,7 +177,15 @@ function displayItems(itemsList) {
         // item name and price
         let itemDescription = document.createElement("SPAN");
         itemDescription.classList.add('item-description');
-        itemDescription.innerHTML = item.name + ` &nbsp &nbsp &nbsp &nbsp` + `$ ${item.price}`;
+
+        if (screen.width >= 1500) {
+            itemDescription.innerHTML = item.name + ` &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp` + `$ ${item.price}`;
+        }
+        else {
+            itemDescription.innerHTML = item.name + ` &nbsp &nbsp &nbsp &nbsp` + `$ ${item.price}`;
+
+        }
+
         itemBox.append(imageContainer);
         itemBox.appendChild(itemDescription);
         itemBox.classList.add('store-item');
@@ -246,7 +254,7 @@ function clearCart() {
 function toggleCartMenue() {
     let cartMenue = document.querySelector('#cart-menue');
     cartMenue.innerHTML = '';
-    if (cartMenue.style.display != 'none') {
+    if (cartMenue.style.display != 'none' && cartMenue.style.display != '') {
         cartMenue.style.display = 'none';
         return;
     }
@@ -284,7 +292,6 @@ function toggleCartMenue() {
     totalDiv.className = 'total-div';
     let utilitiesDiv = document.createElement('div');
     let clearCartBTN = document.createElement('button');
-
     let checkoutBTN = document.createElement('button');
     clearCartBTN.innerHTML = 'Clear Cart';
     checkoutBTN.innerHTML = 'Checkout';
