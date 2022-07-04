@@ -115,8 +115,18 @@ function toggleDropDown() {
 function aboutusSweetAssignEvent() {
     //cant stop propagation unless using native events
     let sweet = document.querySelector('.aboutus-sweet');
-    sweet.addEventListener('click', (elem) => {
+    if (screen.width < 800) {
+        sweet.addEventListener('click', (elem) => {
+            return toggleAboutBorder(elem);
+        });
+        return;
+    }
+    //hover events for desktop users
+    sweet.addEventListener('mouseover', (elem) => {
         return toggleAboutBorder(elem);
+    });
+    sweet.addEventListener('mouseleave', (elem) => {
+        return defaultAboutBorder(elem);
     });
 }
 function defaultAboutBorder() {
