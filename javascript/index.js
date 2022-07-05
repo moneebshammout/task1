@@ -2,84 +2,84 @@ let items = [
     {
         'id': 1,
         'name': 'Sweet Item',
-        'image': '/images/item1.jpeg',
+        'image': './images/item1.jpeg',
         'price': 5,
         'category': 'sweets'
     },
     {
         'id': 2,
         'name': 'Cupcake Item',
-        'image': '/images/item2.jpeg',
+        'image': './images/item2.jpeg',
         'price': 5,
         'category': 'cupcakes'
     },
     {
         'id': 3,
         'name': 'Cake Item',
-        'image': '/images/item3.jpeg',
+        'image': './images/item3.jpeg',
         'price': 5,
         'category': 'cakes'
     },
     {
         'id': 4,
         'name': 'Dougnut Item',
-        'image': '/images/item4.jpeg',
+        'image': './images/item4.jpeg',
         'price': 5,
         'category': 'doughnuts'
     },
     {
         'id': 5,
         'name': 'Sweet Item',
-        'image': '/images/item5.jpeg',
+        'image': './images/item5.jpeg',
         'price': 10,
         'category': 'sweets'
     },
     {
         'id': 6,
         'name': 'Cupcake Item',
-        'image': '/images/item6.jpeg',
+        'image': './images/item6.jpeg',
         'price': 10,
         'category': 'cupcakes'
     },
     {
         'id': 7,
         'name': 'Cake Item',
-        'image': '/images/item7.jpeg',
+        'image': './images/item7.jpeg',
         'price': 10,
         'category': 'cakes'
     },
     {
         'id': 8,
         'name': 'Dougnut Item',
-        'image': '/images/item8.jpeg',
+        'image': './images/item8.jpeg',
         'price': 10,
         'category': 'doughnuts'
     },
     {
         'id': 9,
         'name': 'Sweet Item',
-        'image': '/images/item9.jpeg',
+        'image': './images/item9.jpeg',
         'price': 15,
         'category': 'sweets'
     },
     {
         'id': 10,
         'name': 'Cupcake Item',
-        'image': '/images/item10.jpeg',
+        'image': './images/item10.jpeg',
         'price': 15,
         'category': 'cupcakes'
     },
     {
         'id': 11,
         'name': 'Cake Item',
-        'image': '/images/item11.jpeg',
+        'image': './images/item11.jpeg',
         'price': 15,
         'category': 'cakes'
     },
     {
         'id': 12,
         'name': 'Dougnut Item',
-        'image': '/images/item12.jpeg',
+        'image': './images/item12.jpeg',
         'price': 15,
         'category': 'doughnuts'
     },
@@ -159,6 +159,7 @@ function deleteCartItem(itembox, item) {
 }
 function displayItems(itemsList) {
     let container = document.querySelector('.store-item-container');
+    container.innerHTML = '';
     if (itemsList == null) {
         itemsList = items;
     }
@@ -192,7 +193,7 @@ function displayItems(itemsList) {
             itemDescription.innerHTML = item.name + ` &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp` + `$ ${item.price}`;
         }
         else {
-            itemDescription.innerHTML = item.name + ` &nbsp &nbsp &nbsp &nbsp` + `$ ${item.price}`;
+            itemDescription.innerHTML = item.name + ` &nbsp &nbsp  &nbsp` + `$ ${item.price}`;
 
         }
 
@@ -218,10 +219,13 @@ function displayItems(itemsList) {
         container.append(itemBox);
     }
 }
+window.addEventListener('onresize', function () {
+    //when changing screen resolution change items display
+    displayItems(null);
+})
 function searchCategory(catName) {
     let container = document.querySelector('.store-item-container');
     catName = catName.toLowerCase();
-    container.innerHTML = '';
     if (catName == 'all') {
         displayItems(null);
         return;

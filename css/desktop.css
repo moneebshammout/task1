@@ -59,7 +59,7 @@
     color: white;
 }
 .welcome-container {
-    background: linear-gradient(var(--yellowTrans), var(--yellowTrans)), url('/images/welcomeImage.jpeg') center/cover fixed no-repeat;
+    background: linear-gradient(var(--yellowTrans), var(--yellowTrans)), url('../images/welcomeImage.jpeg') center/cover fixed no-repeat;
     position: relative;
     min-height: 70rem;
     min-width: 5%;
@@ -96,7 +96,7 @@
 .aboutus-border {
     width: 100%;
     height: auto;
-    max-width: 31.5%;
+    max-width: 31%;
     max-height: 42%;
     margin-top: -2rem;
     margin-left: 4rem;

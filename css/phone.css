@@ -25,7 +25,7 @@
     transition: 1s;
 }
 .welcome-container {
-    background: linear-gradient(var(--yellowTrans), var(--yellowTrans)), url('/images/welcomeImage.jpeg') center/cover fixed no-repeat;
+    background: linear-gradient(var(--yellowTrans), var(--yellowTrans)), url('../images/welcomeImage.jpeg') center/cover fixed no-repeat;
     position: relative;
     min-height: 50rem;
     min-width: 5%;
